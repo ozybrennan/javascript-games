@@ -22,9 +22,6 @@ Clock.prototype.run = function () {
   window.setInterval(this._tick.bind(this), Clock.TICK);
 };
 
-// var clock = new Clock();
-// clock.run();
-
 var reader = readline.createInterface({
   input: process.stdin,
   output: process.stdout
@@ -44,10 +41,6 @@ var addNumbers = function (sum, numsLeft, completionCallback) {
     reader.close()
   }
 };
-
-// addNumbers(0, 3, function (sum) {
-//   console.log("total sum: " + sum)
-// })
 
 var absurdBubbleSort = function (arr, sortCompletionCallback) {
   var outerBubbleSortLoop = function (madeAnySwaps) {
